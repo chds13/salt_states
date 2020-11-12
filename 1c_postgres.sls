@@ -24,18 +24,18 @@ pgrepo:
       - pkg: postgresql-common
 
 postgresql-common:
-  pkg.installed:
+  pkg.installed
 
 libicu55:
   pkg.installed:
     - sources:
-      - libicu55_55.1-7_amd64: http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7_amd64.deb
+      - libicu55: http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7_amd64.deb
 
 postgresql:
   pkg.installed:
     - sources:
-      - libpq5_11.9-1.1C_amd64: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/libpq5_11.9-1.1C_amd64.deb
-      - postgresql-client-11_11.9-1.1C-amd64: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/postgresql-client-11_11.9-1.1C_amd64.deb
-      - postgresql-11_11.9-1.1C_amd64: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/postgresql-11_11.9-1.1C_amd64.deb
+      - libpq5: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/libpq5_11.9-1.1C_amd64.deb
+      - postgresql-client-11: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/postgresql-client-11_11.9-1.1C_amd64.deb
+      - postgresql-11: http://192.168.123.253/1c/pg_11.9/linux_deb/amd64/postgresql-11_11.9-1.1C_amd64.deb
     - hold: True
 {% endif %}
